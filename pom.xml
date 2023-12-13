@@ -9,7 +9,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>pl.klugeradoslaw</groupId>
-    <artifactId>winemakersapi</artifactId>
+    <artifactId>winemakers-api</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>winemakers-api</name>
     <description>winemakers-api</description>
