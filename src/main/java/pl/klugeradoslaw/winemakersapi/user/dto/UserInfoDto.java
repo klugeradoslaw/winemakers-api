@@ -1,10 +1,12 @@
 package pl.klugeradoslaw.winemakersapi.user.dto;
 
+import lombok.Builder;
 import lombok.Getter;
 
 import java.util.List;
 
 @Getter
+@Builder
 public class UserInfoDto {
     private final String email;
     private final String password;
@@ -16,3 +18,4 @@ public class UserInfoDto {
         this.roles = roles;
     }
 }
+

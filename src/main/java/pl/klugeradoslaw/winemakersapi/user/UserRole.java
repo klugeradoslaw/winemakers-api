@@ -1,6 +1,16 @@
 package pl.klugeradoslaw.winemakersapi.user;
 
-public enum UserRole {
-    USER_ROLE,
-    ADMIN_ROLE
+import jakarta.persistence.*;
+import lombok.Getter;
+import lombok.Setter;
+
+@Entity
+@Getter
+@Setter
+@Table(name = "user_role")
+public class UserRole {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+    private String name;
 }
