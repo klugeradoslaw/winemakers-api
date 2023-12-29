@@ -3,6 +3,7 @@ package pl.klugeradoslaw.winemakersapi.user;
 import org.springframework.stereotype.Service;
 import pl.klugeradoslaw.winemakersapi.user.dto.UserInfoDto;
 
+import java.util.List;
 import java.util.Optional;
 
 @Service
@@ -17,4 +18,8 @@ public class UserService {
         return userRepository.findByEmail(email).map(UserDtoMapper::mapToUserInfoDto);
 
     }
+    public List<User> findAllUsers() {
+        return userRepository.findAll();
+    }
+
 }

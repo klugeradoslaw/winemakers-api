@@ -10,12 +10,12 @@ import java.util.List;
 public class UserInfoDto {
     private final String email;
     private final String password;
-    private final List<String> roles;
+    private final String role;
 
-    public UserInfoDto(String email, String password, List<String> roles) {
+    public UserInfoDto(String email, String password, String role) {
         this.email = email;
         this.password = password;
-        this.roles = roles;
+        this.role = role;
     }
 }
 

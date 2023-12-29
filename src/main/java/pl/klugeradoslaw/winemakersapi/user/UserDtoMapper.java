@@ -11,7 +11,7 @@ public class UserDtoMapper {
          return UserInfoDto.builder()
                  .email(user.getEmail())
                  .password(user.getPassword())
-                 //.roles(user.getRole().stream().map(UserRole::getName).collect(Collectors.toList()))
+                 .role(user.getRole().toString())
                  .build();
     }
 }
