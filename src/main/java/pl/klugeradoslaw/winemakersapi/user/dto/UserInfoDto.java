@@ -18,4 +18,3 @@ public class UserInfoDto {
         this.role = role;
     }
 }
-
